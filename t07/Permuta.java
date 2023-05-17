@@ -1,20 +1,20 @@
 public class Permuta {
-	public static void Permutacao(String p, String S) {
-		if (S.length() == 1) {
-			System.out.println(p+S);
+	public static void permuta(String prefixo, String sequencia) {
+		if (sequencia.length() == 0) {
+			System.out.println(prefixo);
 		} else {
-			String Slinha;
+			String sLinha;
 			String pLinha;
 
-			for (int i = 0; i < S.length(); i++) {
-				Slinha = S.substring(0, i) + S.substring(i+1);
-				pLinha = p + S.charAt(i);
-				Permutacao(pLinha, Slinha);
+			for (int i = 0; i < sequencia.length(); i++) {
+				pLinha = prefixo + sequencia.charAt(i);
+				sLinha = sequencia.substring(0, i) + sequencia.substring(i+1);
+				permuta(pLinha, sLinha);
 			}
 		}
 	}
 
 	public static void main(String[] args) {
-		Permutacao(new String(), args[0]);
+		permuta(new String(), args[0]);
 	}
 }

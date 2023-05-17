@@ -1,19 +1,17 @@
 import java.util.ArrayList;
-
-class Pessoa {
-	
-}
+import java.util.Objects;
 
 public class Uniao {
-	private ArrayList filhos;
-	private Pessoa parceiros[2];
+	private ArrayList<Pessoa> filhos;
+	private Pessoa[] parceiros;
 
-	private void novoFilho(Pessoa p) {
-		filhos.add(p);
+	private void novoFilho(Pessoa filho) {
+		filhos.add(filho);
 	}
 
 	public Uniao(Pessoa a, Pessoa b) {
-		parceiros[0] = a;
-		parceiros[1] = b;
+		Objects.requireNonNull(a);
+		Objects.requireNonNull(b);
+		parceiros = new Pessoa[] { a, b };
 	}
 }

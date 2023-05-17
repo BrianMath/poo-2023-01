@@ -1,17 +1,13 @@
 import java.util.TreeSet;
 
-class Convidado {
-
-}
-
 public class Festa {
-	private TreeSet convidados = new TreeSet();
+	private TreeSet<Convidado> convidados = new TreeSet<>();
 
-	public void novoConvidado(Convidado c) {
-		convidados.add(c);
+	public void novoConvidado(Convidado convidado) {
+		convidados.add(convidado);
 	}
 
-	public Festa(Convidado c) {
-		convidados.add(c);
+	public Festa(Convidado convidado) {
+		convidados.add(convidado);
 	}
 }

@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class Religiao {
-	private ArrayList devotos;
+	private ArrayList<Devoto> devotos;
 
-	public void novoFiel(Devoto d) {
-		devotos.add(d);
+	public void novoDevoto(Devoto devoto) {
+		devotos.add(devoto);
 	}
 }

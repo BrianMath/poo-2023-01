@@ -1,5 +1,5 @@
 public class Devoto {
-	public Devoto(Religiao r) {
-		r.novoFiel(this);
+	public Devoto(Religiao religiao) {
+		religiao.novoDevoto(this);
 	}
 }

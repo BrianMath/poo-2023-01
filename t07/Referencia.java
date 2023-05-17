@@ -1,3 +1,2 @@
-public class Referencia {}
-
-class Revista extends Referencia {}
+public class Referencia {
+}
