@@ -11,7 +11,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <project.mainClass>com.github.kyriosdata.exemplo.application.console.ProgramaCalendario</project.mainClass>
+        <project.mainClass>com.github.brianmath</project.mainClass>
 
         <tools.dir>${project.basedir}/tools</tools.dir>
 
@@ -52,7 +52,7 @@
         <version>3.0.0</version>
     </parent>
 
-    <groupId>com.github.kyriosdata</groupId>
+    <groupId>com.github.brianmath</groupId>
     <artifactId>exemplo</artifactId>
     <packaging>jar</packaging>
     <version>1.0.3</version>
@@ -66,12 +66,7 @@
         necessidades específicas do projeto em questão.
     </description>
 
-    <url>https://github.com/kyriosdata/${nome.projeto}</url>
-
-    <organization>
-        <name>Instituto de Informática (UFG) - Fábrica de Software</name>
-        <url>http://www.inf.ufg.br</url>
-    </organization>
+    <url>https://github.com/brianmath/${nome.projeto}</url>
 
     <inceptionYear>2016</inceptionYear>
 
@@ -90,20 +85,18 @@
 
     <developers>
         <developer>
-            <id>kyriosdata</id>
-            <name>Fábio Nogueira de Lucena</name>
-            <email>fabio@inf.ufg.br</email>
-            <organization>Instituto de Informática (UFG)</organization>
-            <organizationUrl>http://www.inf.ufg.br</organizationUrl>
+            <id>brianmath</id>
+            <name>Brian Matheus Rodrigues Ribeiro</name>
+            <email>brian@discente.ufg.br</email>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/kyriosdata/${nome.projeto}.git
+        <connection>scm:git:https://github.com/brianmath/${nome.projeto}.git
         </connection>
-        <developerConnection>scm:git:https://github.com/kyriosdata/${nome.projeto}.git
+        <developerConnection>scm:git:https://github.com/brianmath/${nome.projeto}.git
         </developerConnection>
-        <url>https://github.com/kyriosdata/${nome.projeto}</url>
+        <url>https://github.com/brianmath/${nome.projeto}</url>
     </scm>
 
     <dependencies>
@@ -333,7 +326,6 @@
 
             <!-- sonarqube (detalhes em https://www.sonarqube.org/)      -->
             <!-- SonarCloud é instância gratuita empregada pelo projeto  -->
-            <!-- https://sonarcloud.io/dashboard?id=com.github.kyriosdata%3Aexemplo -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
@@ -680,11 +672,11 @@
                         <configuration>
                             <targetClasses>
                                 <param>
-                                    com.github.kyriosdata.exemplo.domain.Calendario
+                                    com.github.brianmath
                                 </param>
                             </targetClasses>
                             <targetTests>
-                                <param>com.github.kyriosdata.exemplo.*</param>
+                                <param>com.github.brianmath.*</param>
                             </targetTests>
                         </configuration>
                     </plugin>
