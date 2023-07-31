@@ -36,6 +36,5 @@ public class Circulo1 {
 	}
 
 	public void move() {
-		// TODO
 	}
 }

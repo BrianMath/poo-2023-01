@@ -18,6 +18,5 @@ public class Circulo2 {
 	}
 
 	public void move() {
-		// TODO
 	}
 }

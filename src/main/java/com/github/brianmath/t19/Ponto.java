@@ -26,6 +26,5 @@ public class Ponto {
 	}
 
 	public void move() {
-		// TODO
 	}
 }
