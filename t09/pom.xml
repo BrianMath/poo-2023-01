@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <nome.projeto>POO</nome.projeto>
+        <nome.projeto>exemplo</nome.projeto>
 
         <java.version>20</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>

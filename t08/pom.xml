@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <nome.projeto>POO</nome.projeto>
+        <nome.projeto>exemplo</nome.projeto>
 
-        <java.version>20</java.version>
+        <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -676,7 +676,7 @@
                                 </param>
                             </targetClasses>
                             <targetTests>
-                                <param>com.github.brianmath.*</param>
+                                <param>com.github.brianmath.poo.*</param>
                             </targetTests>
                         </configuration>
                     </plugin>
